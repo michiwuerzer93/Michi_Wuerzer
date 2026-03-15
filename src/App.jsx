@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 /* ─── PHOTO: Replace src with your image path ─── */
 /* Put your photo in /public/michi.jpg and uncomment the img tag in Hero */
-const PHOTO_PATH = "/michi.jpg";
+const PHOTO_PATH = "/Foto_Michi_Finish.png";
 
 const sections = ["hero","about","timeline","skills","diplome","referenzen","contact"];
 
@@ -67,34 +67,25 @@ function Hero({ id }) {
           </div>
         </div>
 
-        {/* ── PHOTO ── */}
-        <div style={{flex:"0 0 auto",animation:"fadeIn 1s ease 0.5s both"}}>
-          {/*
-            OPTION A: Placeholder (active by default)
-            OPTION B: Dein Foto — uncomment below and comment out Option A
-          */}
-
-          {/* OPTION A: Placeholder */}
-          <div style={{width:230,height:300,borderRadius:20,border:"1px solid rgba(201,169,110,0.15)",background:"linear-gradient(145deg, rgba(201,169,110,0.06) 0%, rgba(201,169,110,0.02) 100%)",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",gap:12}}>
-            <div style={{width:64,height:64,borderRadius:"50%",border:"2px solid rgba(201,169,110,0.2)",display:"flex",alignItems:"center",justifyContent:"center"}}>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(201,169,110,0.35)" strokeWidth="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            </div>
-            <span style={{fontSize:12,fontFamily:"'DM Sans',sans-serif",color:"rgba(201,169,110,0.3)"}}>Dein Foto hier</span>
-          </div>
-
-          {/* OPTION B: Echtes Foto — entferne die Kommentare und lösche Option A
+    {/* ── PHOTO ── */}
+        <div style={{flex:"0 0 auto", animation:"fadeIn 1s ease 0.5s both"}}>
+          {/* OPTION B: Echtes Foto aktiv */}
           <img
             src={PHOTO_PATH}
             alt="Michi Würzer"
-            style={{width:230,height:300,borderRadius:20,objectFit:"cover",border:"1px solid rgba(201,169,110,0.15)"}}
+            style={{
+              width: 230,
+              height: 300,
+              borderRadius: 20,
+              objectFit: "cover",
+              border: "1px solid rgba(201,169,110,0.15)"
+            }}
           />
-          */}
         </div>
       </div>
     </section>
   );
 }
-
 /* ═══════════════════════════════════════════
    ABOUT
    ═══════════════════════════════════════════ */
